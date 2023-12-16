@@ -1,8 +1,8 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -25,15 +25,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
-
-.flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-}
-
-.flex-component {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 20px;
-}
