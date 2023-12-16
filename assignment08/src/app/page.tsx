@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Button from "./components/buttons/button";
 
 const personsList = ['Usman','Ali','Shami','Moiz','Zubair','Hamza'];
 
@@ -24,10 +25,18 @@ export default function Home() {
     <div className="container mx-auto text-center mt-8">
       <h1 className="text-4xl font-bold mb-4">{currentPersonName}</h1>
       <div>
-        <button className="mr-2" onClick={handlePreviousPerson}>
+        <Button 
+          text="Previous"
+          onClickHandler={handlePreviousPerson}
+        />
+        <Button 
+          text="Next"
+          onClickHandler={handleNextPerson}
+        />
+        {/* <button className="mr-2" onClick={handlePreviousPerson}>
           Previous
         </button>
-        <button onClick={handleNextPerson}>Next</button>
+        <button onClick={handleNextPerson}>Next</button> */}
       </div>
     </div>
   )
